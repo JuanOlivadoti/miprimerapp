@@ -4,11 +4,37 @@ Ext.define('app.view.login.WindowLoginController', {
   alias: 'controller.windowloginctrl',
 
   hacerLogin: function(){
-      var datos = this.lookupReference('formulario').getValues();
+      //var datos = this.lookupReference('formulario').getValues(); //DATOS DESDE EL FORULARIO
+      var formulario = this.lookupReference('formulario'); // BUSCAMOS EL FORMULARIO COMPLETO
 
-      this.getView().close();
+//      Ext.Ajax.request({ //--- LLAMADA AJAX
+        formulario.getForm().submit({ // CON EL FORMULARIO COMPLETO HACEMOS UN SUBMIT
+        url: 'server/dologin.json',
 
-      Ext.Msg.alert('Hola', 'Bienvenido de nuevo Usuario: ' + datos.usuario + '!');
+        scope: this, //same scope
+
+        //params: datos,
+
+        success: function(response, opts) {
+          //var obj = Ext.decode(response.responseText); // NO VUELVE EN EL MISMO ORDEN QUE EN LA LLAMADA AJAX
+          //console.dir(obj); //RESULTADO DE AJAX
+          console.dir(opts.result); // RESULTADO NUEVO
+
+          var obj = opts.result;
+
+          //this.getView().close(); //SE MUEVE DENTRO DE LA ALERTA
+
+
+
+          Ext.Msg.alert('Hola', 'Bienvenido de nuevo Usuario: ' + obj.fullname + '!', function(){
+            this.getView().close()
+          }, this /*SAME SCOPE*/);
+        },
+
+        failure: function(response, opts) {
+           console.log('server-side failure with status code ' + response.status);
+        }
+      });
 
     }
 
