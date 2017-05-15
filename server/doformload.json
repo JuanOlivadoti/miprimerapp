@@ -1,0 +1,13 @@
+{
+  success: true,
+    data: {
+      txt_nombre: 'JP',
+      txt_correo: 'j@gmail.com',
+      home_score: 'jp',
+      txt_edad: 36,
+      txt_fnacimiento: '20-08-1980',
+      txt_genero: '1',
+      txt_idioma: ['2', '4']
+  }
+}
+

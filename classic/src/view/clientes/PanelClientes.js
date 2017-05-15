@@ -9,19 +9,35 @@ Ext.define('app.view.clientes.PanelClientes', {
     //xtype: 'button', //por default contiene botones a no ser q especifiquemos lo contrario.
     text: 'Agregar cliente',
     iconCls: 'x-fa fa-plus',
+
     handler: function(){
       var window = Ext.create('Ext.Window',{
         modal: true,
         title: 'Agregar un nuevo cliente',
-        height: 300,
+        height: 480,
         width: 400,
         layout: 'fit',
+        // closable: false,
 
         items: [{
           xtype: 'formcliente'
         }],
 
         buttons: [{
+          text: 'Submit',
+          handler: function(){
+            // console.log(this, window)
+            var form = this.up('window').down('formcliente');
+            if ( form.isValid() )
+              form.doSubmit();
+          }
+        },{
+          text: 'Load',
+          handler: function(){
+            var form = this.up('window').down('formcliente');
+            form.doLoad();
+          }
+        },{
           text: 'Cerrar',
           handler: function(){
             window.close();
