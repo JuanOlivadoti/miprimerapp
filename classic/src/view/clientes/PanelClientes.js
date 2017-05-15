@@ -60,11 +60,9 @@ Ext.define('app.view.clientes.PanelClientes', {
 
     xtype: 'tabpanel',
 
-    bodyStyle: 'background-color: blue; font-size: 30px; color: #FFF',
     items:[{
       title: 'Listado de clientes',
-      html: 'COLUMNAS PARA SER SELECCIONADAS',
-      bodyStyle: 'background-color: #FEA; font-size: 30px; color: #F0F'
+      xtype: 'gridclientes'
     },{
 
     }],

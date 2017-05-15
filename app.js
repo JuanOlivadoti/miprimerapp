@@ -17,6 +17,7 @@ Ext.application({
         'app.view.clientes.PanelClientes',
         'app.view.clientes.form.FromCliente',
         'app.view.clientes.form.ComboClientes',
+        'app.view.clientes.GridClientes',
         'app.store.clientes.StoreClientes'
     ],
 

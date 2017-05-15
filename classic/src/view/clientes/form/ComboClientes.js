@@ -9,7 +9,7 @@ Ext.define('app.view.clientes.form.ComboClientes',{
 
     pageSize :25,
 
-    // hideTrigger: true,
+    hideTrigger: true,
 
     initComponent: function (){
 
