@@ -58,7 +58,7 @@ Ext.define('app.view.main.Main', {
     },
 
     defaults: {
-        bodyPadding: 20,
+        // bodyPadding: 20,
         tabConfig: {
             plugins: 'responsive',
             responsiveConfig: {
@@ -76,6 +76,10 @@ Ext.define('app.view.main.Main', {
     },
 
     items: [{
+        title: 'Clientes',
+        iconCls: 'fa-user',
+        xtype: 'panelclientes'
+    },{
         title: 'Home',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!

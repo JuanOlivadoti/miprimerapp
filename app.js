@@ -11,7 +11,9 @@ Ext.application({
     requires: [
         'app.view.main.Main',
         'app.view.login.WindowLogin',
-        'app.view.login.WindowLoginController'
+        'app.view.login.WindowLoginController',
+        'app.view.clientes.PanelClientes',
+        'app.view.clientes.form.FromCliente'
     ],
 
     // The name of the initial view to create. With the classic toolkit this class
