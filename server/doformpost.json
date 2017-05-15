@@ -1,6 +1,6 @@
 {
-  success: false,
-  errors: {
-    txt_correo: 'Este correo ya está registrado'
-  }
+	success: false, 
+	errors:{
+		txt_correo: 'Este correo ya esta registrado'
+	}
 }

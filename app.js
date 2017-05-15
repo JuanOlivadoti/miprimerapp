@@ -9,11 +9,15 @@ Ext.application({
     extend: 'app.Application',
 
     requires: [
+
         'app.view.main.Main',
         'app.view.login.WindowLogin',
         'app.view.login.WindowLoginController',
+
         'app.view.clientes.PanelClientes',
-        'app.view.clientes.form.FromCliente'
+        'app.view.clientes.form.FromCliente',
+        'app.view.clientes.form.ComboClientes',
+        'app.store.clientes.StoreClientes'
     ],
 
     // The name of the initial view to create. With the classic toolkit this class

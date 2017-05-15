@@ -49,7 +49,7 @@ Ext.define('app.view.clientes.PanelClientes', {
 
     }
   },'->',{
-    xtype: 'textfield',
+    xtype: 'comboclientes',
     emptyText: 'Buscar cliente',
     width: 300
   }],

@@ -1,15 +1,15 @@
 {
-  "user_k": "1",
-  "email": "j@gmail.com",
-  "user": "JP",
-  "role_k": "1",
-  "name": "Juan Pablo",
-  "lastname": "Oliva",
-  "fullname": "Juan Pablo Oliva",
-  "avatar": "https://medchannel.org/images/avatar.jpg",
-  "ip": "127.0.0.1",
-  "platform": "iOS",
-  "device": "unknown",
-  "token": "3ae561e0671b79543a116",
-  "success": true
+	"user_k":"1",
+	"email":"joshua@extjs.mx",
+	"user":"admin",
+	"role_k":"1",
+	"name":"Joshua",
+	"lastname":"",
+	"fullname":"Joshua",
+	"avatar":"resources\/images\/branding\/avatar.png",
+	"ip":"127.0.0.1",
+	"platform":"iOS",
+	"device":"unknow",
+	"token":"3ae561e0671b79543a116",
+	"success":true
 }
