@@ -15,7 +15,10 @@ Ext.define('app.Application', {
     launch: function () {
         // TODO - Launch the application
 
-        var ventana = Ext.create
+        var ventana = Ext.create('app.view.login.WindowLogin', {
+        });
+
+        ventana.show();
     },
 
     onAppUpdate: function () {
